@@ -1,54 +1,74 @@
-body {
-  font-family: Lato, sans-serif;
+
+
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* header styling */
 header {
+  font-family: Raleway, sans-serif;
   background-image: url("../img/blog_header_bg.jpg");
   background-size: cover;
   background-position: center center;
-  height: 28em;
+  height: 25em;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 nav {
   background: white;
-  margin: .5em 0;
   padding: 1.5em;
+  position: fixed;
+  width: 100%;
 }
 
 nav a {
   text-decoration: none;
   color: #69B;
-  padding: 3em;
+  padding: 0 3em;
   font-size: 1.2em;
   letter-spacing: .2em;
+}
+
+nav a:hover {
+  color: #246;
 }
 
 h1 {
   color: white;
   font-size: 3em;
-  margin: 5em 0;
+  padding: 4em 0 0 0;
   letter-spacing: .5em;
-  font-weight: 900;
+  margin: 0;
+}
+
+/* Main Content Styling */
+main {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4em;
 }
 
 section {
-  margin: auto;
-  width: 80%;
+  padding: 0 5em;
+}
+aside {
+  width: 200%;
+  margin: 3em 3em 0 1em;
 }
 
+/* header, text, and image styling */
 h2, h3, p, ul {
   color: #246;
   letter-spacing: .1em;
-  font-weight: 300;
   margin: 0;
 }
 
 h2, h3 {
-  font-weight: bold;
+  font-family: Raleway, sans-serif;
   text-transform: uppercase;
 }
 
@@ -62,56 +82,79 @@ h2 {
   padding: .7em 0;
 }
 
+p {
+  padding: 1.2em 0;
+}
+
 img {
   width: 100%;
-  padding: 2em 0;
+  margin: 1em 0;
 }
 
+/* "Recent Issues" List */
 p, ul{
-  font-size: 1.2em;
+  font-family: Lato, sans-serif;
+  font-size: 1em;
   line-height: 1.7em;
-}
-
-p.about {
-  padding: 1em 0;
-}
-
-img.about {
-  width: 45%;
 }
 
 ul {
   padding: 1em;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  margin-bottom: 2em;
 }
 
 li a{
   text-decoration: none;
   color: #69B;
-  font-weight: 700;
 }
 
+/* footer */
 footer{
   background-color: #CFF9FF;
   text-align: center;
-  padding: ;
+}
+
+button, input {
+  text-decoration: none;
+  font-family: raleway, sans-serif;
+  font-size: .9em;
+  text-transform: uppercase;
+  margin: 0 1em 4em 1em;
+  letter-spacing: .2em;
+}
+
+input {
+  padding: .7em 7em;
+  background-color: rgb(255,255,255);
+  border: none;
+  text-align: center;
+}
+
+button {
+  padding: .7em 3em;
+  background-color: rgba(0,0,0,0);
+  border: .14em solid #246;
+  color: #246;
+}
+
+button:hover {
+  background-color: #246;
+  color: white;
 }
 
 footer p {
+  font-family: Raleway, sans-serif;
   border-top: .1em solid #246;
   padding: 1.2em;
   color: #69B;
-}
-
-div {
-  padding: 3em;
 }
 
 #one, #two, #three{
   text-decoration: none;
   color: #246;
   font-size: 3em;
-  padding: .7em;
+  padding: 1.5em .7em 1em .7em;
 }
 
 
