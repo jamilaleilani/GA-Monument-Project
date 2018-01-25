@@ -7,13 +7,18 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+}
+
 /* header styling */
 header {
-  font-family: Raleway, sans-serif;
   background-image: url("../img/blog_header_bg.jpg");
   background-size: cover;
   background-position: center center;
-  height: 25em;
+  height: 28em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -28,7 +33,7 @@ nav {
 nav a {
   text-decoration: none;
   color: #69B;
-  padding: 0 3em;
+  padding: 0 4%;
   font-size: 1.2em;
   letter-spacing: .2em;
 }
@@ -37,27 +42,34 @@ nav a:hover {
   color: #246;
 }
 
+i {
+  display: none;
+}
+
 h1 {
   color: white;
-  font-size: 3em;
-  padding: 4em 0 0 0;
+  font-size: 4em;
+  font-weight: 600;
+  padding-top: 4em;
   letter-spacing: .5em;
   margin: 0;
 }
 
 /* Main Content Styling */
+
 main {
   display: flex;
   flex-direction: row;
-  margin-bottom: 4em;
+  justify-content: center;
 }
 
 section {
-  padding: 0 5em;
+  width: 50em;
+  margin: 2%;
 }
 aside {
-  width: 200%;
-  margin: 3em 3em 0 1em;
+  margin: 6% 2%;
+  width: 20em;
 }
 
 /* header, text, and image styling */
@@ -68,8 +80,8 @@ h2, h3, p, ul {
 }
 
 h2, h3 {
-  font-family: Raleway, sans-serif;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 h3 {
@@ -100,13 +112,45 @@ p, ul{
 
 ul {
   padding: 1em;
-  font-size: 1.2em;
+  font-size: 1.02em;
   margin-bottom: 2em;
 }
 
 li a{
   text-decoration: none;
   color: #69B;
+}
+
+.contactform {
+  text-align: center;
+  margin: 4em auto;
+}
+
+.commentform::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align: left;
+}
+
+.contactform input {
+  background-color: rgba(0,0,0,0);
+  border: .14em solid #246;
+  color: #246;
+}
+
+.input-info {
+  width: 37.75%;
+  margin: 1%;
+  padding: .7em 1em;
+}
+
+.comment {
+  width: 78%;
+  margin: 1%;
+  padding: .7em 0 8em 1em;
+}
+
+button.comment-form {
+width: 78%;
+margin: 1%;
 }
 
 /* footer */
@@ -117,18 +161,21 @@ footer{
 
 button, input {
   text-decoration: none;
-  font-family: raleway, sans-serif;
-  font-size: .9em;
+  font-size: 1em;
   text-transform: uppercase;
   margin: 0 1em 4em 1em;
   letter-spacing: .2em;
 }
 
 input {
-  padding: .7em 7em;
+  padding: .7em 0;
   background-color: rgb(255,255,255);
   border: none;
   text-align: center;
+}
+
+.email input {
+  width: 35%;
 }
 
 button {
@@ -144,19 +191,78 @@ button:hover {
 }
 
 footer p {
-  font-family: Raleway, sans-serif;
   border-top: .1em solid #246;
   padding: 1.2em;
   color: #69B;
 }
 
-#one, #two, #three{
+#one, #two, #three {
   text-decoration: none;
   color: #246;
   font-size: 3em;
   padding: 1.5em .7em 1em .7em;
 }
 
+@media screen and (max-width: 600px) {
+
+  html {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 2em;
+    font-weight: 800;
+    padding-top: 8em;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    float: right;
+    padding: .7em;
+    color: white;
+    font-size: 2.5em;
+  }
+
+  #menu:hover {
+    color: #246;
+  }
+
+  main {
+    display: block;
+    justify-content: center;
+  }
+
+  section {
+    width: 90%;
+    margin: 2% auto;
+  }
+
+  aside {
+    width: 90%;
+    margin: 2% auto;
+  }
+
+  .email {
+    margin-bottom: 2em;
+  }
+
+  form.email input, form.email button {
+    margin: 0 auto 1em auto;
+    width: 90%;
+  }
+
+  #one, #two, #three {
+    text-decoration: none;
+    color: #246;
+    font-size: 2em;
+    padding: 3em .4em 1em .4em;
+  }
+
+
+}
 
 
 
