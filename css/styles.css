@@ -40,6 +40,8 @@ nav a {
 
 nav a:hover {
   color: #246;
+  transition: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 i {
@@ -202,9 +204,16 @@ button, input, textarea{
 
 }
 
+button {
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+}
+
 button:hover {
   background-color: #246;
   color: white;
+  transition: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 footer p {
