@@ -121,36 +121,55 @@ li a{
   color: #69B;
 }
 
-.contactform {
+/* Comment Form */
+.mainform {
   text-align: center;
-  margin: 4em auto;
+  width: 80%;
+  margin: 8em auto;
 }
 
-.commentform::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  text-align: left;
+.mainform form {
+  display: flex;
+  flex-direction: column;
 }
 
-.contactform input {
-  background-color: rgba(0,0,0,0);
+.mainform input, .mainform button, textarea {
+  text-decoration: none;
   border: .14em solid #246;
+  box-sizing: border-box;
+  resize: none;
+  flex-grow: 1;
+  padding: .7em;
+}
+
+
+.nameemail {
+  display: flex;
+  flex-direction: row;
+}
+
+.formname{
+  flex-grow: 1;
+  width: 50%;
+  margin: .5em .5em .5em 0;
+}
+
+.formemail {
+  flex-grow: 1;
+  width: 50%;
+  margin: .5em 0 .5em .5em;
+}
+
+textarea {
+  height: 18em;
+  margin: .5em 0;
+}
+
+.mainform button {
   color: #246;
-}
-
-.input-info {
-  width: 37.75%;
-  margin: 1%;
-  padding: .7em 1em;
-}
-
-.comment {
-  width: 78%;
-  margin: 1%;
-  padding: .7em 0 8em 1em;
-}
-
-button.comment-form {
-width: 78%;
-margin: 1%;
+  flex-: 1;
+  width: 100%;
+  margin: .5em 0;
 }
 
 /* footer */
@@ -159,30 +178,28 @@ footer{
   text-align: center;
 }
 
-button, input {
-  text-decoration: none;
+button, input, textarea{
   font-size: 1em;
   text-transform: uppercase;
-  margin: 0 1em 4em 1em;
   letter-spacing: .2em;
 }
 
-input {
+.email input {
   padding: .7em 0;
   background-color: rgb(255,255,255);
   border: none;
   text-align: center;
-}
-
-.email input {
+  margin: 0 1em 4em 1em;
   width: 35%;
 }
 
-button {
+.email button {
   padding: .7em 3em;
   background-color: rgba(0,0,0,0);
   border: .14em solid #246;
   color: #246;
+  margin: 0 1em 4em 1em;
+
 }
 
 button:hover {
@@ -243,6 +260,16 @@ footer p {
   aside {
     width: 90%;
     margin: 2% auto;
+  }
+
+  .mainform input, textarea {
+    font-size: .7em;
+    padding: 1.3em;
+  }
+
+  .mainform {
+    width: 90%;
+    margin: 4em auto;
   }
 
   .email {
