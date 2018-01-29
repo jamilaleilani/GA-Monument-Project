@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 14px;
+}
+
+html {
+  font-size: 14px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+}
+
+/* header, text, and image styling */
+h1 {
+  color: white;
+  font-size: 4em;
+  font-weight: 500;
+  padding-top: 6.5em;
+  letter-spacing: .3em;
+  margin: 0;
+}
+
+h2, h3, p {
+  color: #246;
+  letter-spacing: .15em;
+  margin: 0;
+  line-height: 1.7em;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+h3, p {
+  padding: 1em 0 1em 0;
+
+}
+
+p {
+  font-family: Lato, sans-serif;
+  font-size: 1.1em;
+}
+
+button {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  border: .14em solid #246;
+  padding: .7em 3em;
+}
+
+section {
+  margin: 0 auto;
+  padding: 10em 0;
+  text-align: center;
+}
+/* Body Code */
+/* Header */
+
+header {
+  background-image: url("../img/home_header_bg.jpg");
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70em;
+  text-align: center;
+  text-transform: uppercase;
+  background-attachment: fixed;
+}
+
+nav {
+   z-index: 1;
+  background: white;
+  padding: 1.5em;
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #69B;
+  padding: 0 4%;
+  font-size: 1.2em;
+  letter-spacing: .2em;
+}
+
+nav a:hover {
+  color: #246;
+}
+
+.headertwo {
+  color: white;
+  padding: .7em 0;
+}
+
+/* Archive */
+
+section.archive img {
+  width: 100%;
+}
+
+section.archive {
+  width: 80%;
+}
+
+div.archive {
+  display: flex;
+  flex-direction: row;
+}
+
+article.archive {
+  margin: 1em;
+}
+
+article.archive h3, article.archive p {
+  padding: 1em 0 1em 0;
+  line-height: 1.5em;
+}
+
+.archive button {
+  margin: 3em auto;
+}
+
+/* About */
+.gallery img {
+  width: 100%;
+}
+section.about {
+  background-color: #CFF9FF;
+}
+
+section.about p {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Gallery */
+section.gallery {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.gallerycol img {
+  width: 100%;
+  padding: 1em;
+  transition: .3s;
+  transition-timing-function: ease-out;
+}
+
+div.gallerylarge {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallerysmall {
+  display: none;
+}
+
+.gallerycol img:hover {
+  opacity: .6;
+}
+
+/* Comment Form */
+.mainform {
+  text-align: center;
+  width: 80%;
+}
+
+.mainform h2 {
+  padding: 0 0 2em 0;
+}
+
+.mainform form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainform input, .mainform button, textarea {
+  text-decoration: none;
+  border: .14em solid #246;
+  box-sizing: border-box;
+  resize: none;
+  flex-grow: 1;
+  padding: .7em;
+}
+
+.nameemail {
+  display: flex;
+  flex-direction: row;
+}
+
+.formname {
+  margin: .5em .5em .5em 0;
+}
+
+.formemail {
+  margin: .5em;
+}
+
+.formsubject {
+  margin: .5em 0 .5em .5em;
+}
+
+.formname, .formemail, .formsubject {
+  flex-grow: 1;
+  width: 33.33%;
+}
+
+textarea {
+  height: 18em;
+  margin: .5em 0;
+}
+
+.mainform button {
+  color: #246;
+  width: 100%;
+  margin: .5em 0;
+}
+
+/* footer */
+footer{
+  background-color: #CFF9FF;
+  text-align: center;
+}
+
+button, input, textarea{
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.email input {
+  padding: .7em 0;
+  background-color: rgb(255,255,255);
+  border: none;
+  text-align: center;
+  margin: 0 1em 4em 1em;
+  width: 35%;
+}
+
+.email button {
+  padding: .7em 3em;
+  background-color: rgba(0,0,0,0);
+  border: .14em solid #246;
+  color: #246;
+  margin: 0 1em 4em 1em;
+}
+
+button {
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+button:hover {
+  background-color: #246;
+  color: white;
+}
+
+footer p {
+  border-top: .1em solid #246;
+  padding: 1.2em;
+  color: #69B;
+}
+
+#one, #two, #three {
+  text-decoration: none;
+  color: #246;
+  font-size: 3em;
+  padding: 1.5em .7em 1em .7em;
+}
+
+@media screen and (max-width: 900px) {
+
+  header {
+    background-position: left top;
+    height: 60em;
+    background-size: cover;
+  }
+
+  h1 {
+    padding-top: 6em;
+  }
+
+  div.archive {
+    flex-direction: column;
+  }
+
+  section.about p, section.about h3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  div.gallerylarge {
+      width: 95%;
+  }
+
+  section.mainform, section.archive, section.gallery{
+    width: 90%;
+  }
+
+  div.about p, div.about h3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+   nav {
+    display: none;
+    }
+
+    h1 {
+      padding-top: 8em;
+      font-size: 2.7em;
+    }
+
+    header {
+      height: 45em;
+      background-position: left top;
+    }
+
+    .headertwo {
+      font-size: 1.3em;
+    }
+
+    #menu {
+    display: block;
+    float: left;
+    padding: .6em 1em;
+    color: white;
+    font-size: 2.2em;
+  }
+
+    #menu:hover {
+      color: #246;
+    }
+
+    div.gallerylarge {
+      display: none;
+    }
+
+    div.gallerysmall {
+      display: flex;
+      flex-direction: row;
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .nameemail {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .formname, .formemail, .formsubject {
+      flex-grow: 1;
+      width: 100%;
+      margin: .5em 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
