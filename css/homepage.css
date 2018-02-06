@@ -51,9 +51,6 @@ p {
 }
 
 button {
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: .2em;
   border: .14em solid #246;
   padding: .7em 3em;
 }
@@ -139,7 +136,7 @@ section.about {
 }
 
 section.about p {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -185,35 +182,25 @@ div.gallerylarge {
   flex-direction: column;
 }
 
-.mainform input, .mainform button, textarea {
-  text-decoration: none;
+input, .mainform button, textarea {
   border: .14em solid #246;
-  box-sizing: border-box;
   resize: none;
-  flex-grow: 1;
   padding: .7em;
 }
 
 .nameemail {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-.formname {
-  margin: .5em .5em .5em 0;
+.nameemail input {
+  width: 100%;
+  margin-bottom: .5em;
 }
 
-.formemail {
-  margin: .5em;
-}
-
-.formsubject {
-  margin: .5em 0 .5em .5em;
-}
-
-.formname, .formemail, .formsubject {
-  flex-grow: 1;
-  width: 33.33%;
+.nameemail div {
+  width: 32.5%;
 }
 
 textarea {
@@ -227,20 +214,41 @@ textarea {
   margin: .5em 0;
 }
 
+/* Error Class */
+
 /* footer */
 footer{
   background-color: #CFF9FF;
   text-align: center;
 }
 
-button, input, textarea{
+button, input, textarea {
   font-size: 1em;
-  text-transform: uppercase;
   letter-spacing: .2em;
+  border: .14em solid #246;
+  resize: none;
+  padding: .7em;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    text-transform: uppercase;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-transform: uppercase;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-transform: uppercase;
+}
+
+::placeholder { /* Recent browsers */
+    text-transform: uppercase;
 }
 
 .email input {
-  padding: .7em 0;
   background-color: rgb(255,255,255);
   border: none;
   text-align: center;
@@ -251,12 +259,11 @@ button, input, textarea{
 .email button {
   padding: .7em 3em;
   background-color: rgba(0,0,0,0);
-  border: .14em solid #246;
-  color: #246;
   margin: 0 1em 4em 1em;
 }
 
 button {
+  color: #246;
   transition: .3s;
   transition-timing-function: ease-in-out;
 }
@@ -301,7 +308,7 @@ footer p {
   }
 
   div.gallerylarge {
-      width: 95%;
+      width: 100%;
   }
 
   section.mainform, section.archive, section.gallery{
@@ -361,11 +368,25 @@ footer p {
       flex-direction: column;
     }
 
-    .formname, .formemail, .formsubject {
+    .mainform input {
       flex-grow: 1;
       width: 100%;
       margin: .5em 0;
     }
+}
+
+
+.error {
+  display: none;
+  border: .14em solid red;
+}
+
+.errorMessage {
+  display: none;
+  color: red;
+  text-align: left;
+  font-size: .9em;
+  padding: 0 0 .7em 0;
 }
 
 

@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="css/homepage.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:500, 600,800" rel="stylesheet">
+
+  <script language="JavaScript" type="text/javascript" src="js/jquery-1.7.1.js"></script>
+  <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
 
 </head>
 <body>
@@ -100,13 +101,23 @@
         <h2>Leave a comment</h2>
         <form>
           <div class="nameemail">
-            <input type="text" name="" placeholder="Full Name" class="formname">
-            <input type="text" name="" placeholder="Email Address" class="formemail">
-            <input type="text" name="" placeholder="Subject" class="formsubject">
+            <div>
+              <input type="text" name="" placeholder="Full Name" class="checkForError">
+              <p class="errorMessage">Please enter your full name.</p>
+            </div>
+            <div>
+              <input type="text" name="" placeholder="Email Address" class="checkForError">
+              <p class="errorMessage"> Please enter your email.</p>
+            </div>
+            <div>
+              <input type="text" name="" placeholder="Subject" class="checkForError">
+              <p class="errorMessage">Please enter a subject.</p>
+            </div>
           </div>
-            <textarea placeholder="Comment"></textarea>
+          <textarea placeholder="Comment" class="checkForError"></textarea>
+          <p class="errorMessage">Please enter a message.</p>
         </form>
-        <button>Submit</button>
+        <button id="submit">Submit</button>
       </div>
     </section>
   </main>
@@ -117,15 +128,13 @@
       <a href="#" class="fa fa-facebook" id="one"></a>
       <a href="#" class="fa fa-twitter" id="two"></a>
       <a href="#" class="fa fa-instagram" id="three"></a>
-      <!--followed instructions for linking social media icons // found this online at https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
     </div>
 
-    <form method="post" action="#" class="email">
+    <form class="email">
       <input type="text" name="" placeholder="EMAIL ADDRESS">
       <button>Keep in touch</button>
     </form>
     <p>&copy Sarah Holden</p>
   </footer>
-
 </body>
 </html>

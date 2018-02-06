@@ -49,13 +49,16 @@ i {
   display: none;
 }
 
-h1 {
+.title {
+    padding: 17em 0 0 1em;
+}
+
+.title a {
+  text-decoration: none;
   color: white;
   font-size: 4em;
   font-weight: 600;
-  padding-top: 4em;
   letter-spacing: .5em;
-  margin: 0;
 }
 
 /* Main Content Styling */
@@ -235,10 +238,9 @@ footer p {
   html {
     font-size: 16px;
   }
-  h1 {
-    font-size: 2em;
-    font-weight: 800;
-    padding-top: 8em;
+
+  .title a{
+    font-size: 2.3em;
   }
 
   nav {
