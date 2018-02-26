@@ -182,7 +182,9 @@ div.gallerylarge {
   flex-direction: column;
 }
 
-input, .mainform button, textarea {
+button, input, textarea {
+  font-size: 1em;
+  letter-spacing: .2em;
   border: .14em solid #246;
   resize: none;
   padding: .7em;
@@ -214,24 +216,29 @@ textarea {
   margin: .5em 0;
 }
 
-/* Error Class */
-
-/* footer */
-footer{
-  background-color: #CFF9FF;
-  text-align: center;
-}
-
-button, input, textarea {
-  font-size: 1em;
-  letter-spacing: .2em;
-  border: .14em solid #246;
-  resize: none;
-  padding: .7em;
-}
-
 button {
   text-transform: uppercase;
+  color: #246;
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+button:hover {
+  background-color: #246;
+  color: white;
+}
+
+.error {
+  display: none;
+  border: .14em solid red;
+}
+
+.errorMessage {
+  display: none;
+  color: red;
+  text-align: left;
+  font-size: .9em;
+  padding: 0 0 .7em 0;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -248,6 +255,14 @@ button {
     text-transform: uppercase;
 }
 
+/* Error Class */
+
+/* footer */
+footer{
+  background-color: #CFF9FF;
+  text-align: center;
+}
+
 .email input {
   background-color: rgb(255,255,255);
   border: none;
@@ -260,17 +275,6 @@ button {
   padding: .7em 3em;
   background-color: rgba(0,0,0,0);
   margin: 0 1em 4em 1em;
-}
-
-button {
-  color: #246;
-  transition: .3s;
-  transition-timing-function: ease-in-out;
-}
-
-button:hover {
-  background-color: #246;
-  color: white;
 }
 
 footer p {
@@ -375,19 +379,6 @@ footer p {
     }
 }
 
-
-.error {
-  display: none;
-  border: .14em solid red;
-}
-
-.errorMessage {
-  display: none;
-  color: red;
-  text-align: left;
-  font-size: .9em;
-  padding: 0 0 .7em 0;
-}
 
 
 
